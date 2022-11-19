@@ -1,6 +1,5 @@
 from django.urls import path
 from .views import *
-from . import views
 
 
 app_name = "ecomapp"
@@ -80,6 +79,7 @@ urlpatterns = [
     path("po-pro/add/",  productOwnerCreateView.as_view(), name="poproductcreate"),
 
     path("poregister/", ProductOwnerRegistrationView.as_view(), name="poregistration"),
-#     path("email/", indexemail.as_view(), name="email"),
-    
+
+  
+
 ]
